@@ -30,4 +30,4 @@ This script will append urls with a list of endpoints. Say you have found multip
 ### How to use
 
 - `python3 endpointfuzz.py -u http://example.com -e endpoints.txt -w wordlist.txt -o outputfile`
-- You might need to adapt the gobuster command to your context and choose which error message to hide.
+- You might need to adapt the gobuster command to your context and choose which error code to hide.
