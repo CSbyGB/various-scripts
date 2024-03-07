@@ -9,3 +9,11 @@ It returns true if the server is up and display its ip address. It will also gen
 ### How to use
 
 - `./check_servers.sh server_list.txt up_servers.txt`
+
+## mergeWordlists.py
+
+This script will merge multiple wordlist into one file without duplicates
+
+### How to use
+
+Add in the `file_paths` variable this list of files you want to merge together.
