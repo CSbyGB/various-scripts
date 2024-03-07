@@ -12,7 +12,8 @@ def merge_files(file_paths, output_file):
         for line in merged_content:
             output.write(line + '\n')
 
-# Example usage:
+# Will probably add a main function at some point
+# Process with the merging
 file_paths = ['wordlist1.txt', 'wordlist2.txt', 'wordlist3.txt']
 output_file = 'merged_wordlist.txt'
 
