@@ -22,22 +22,30 @@ def append_endpoints(base_urls, endpoints):
             appended_urls.append(base_url + endpoint)
     return appended_urls
 
+def write_to_file(data, file_path):
+    with open(file_path, 'w') as file:
+        for item in data:
+            file.write("%s\n" % item)
+
 def main():
     parser = argparse.ArgumentParser(description="Run gobuster with specified base URLs and endpoints")
     parser.add_argument("-u", "--base_urls", nargs='+', help="Base URLs separated by spaces")
     parser.add_argument("-e", "--endpoints_file", help="Path to the endpoints file")
     parser.add_argument("-w", "--wordlist", help="Path to the wordlist file")
     parser.add_argument("-o", "--output_file", default="gobuster_results.txt", help="Path to the output file (default: gobuster_results.txt)")
+    parser.add_argument("-a", "--appended_urls_file", default="appended_urls.txt", help="Path to the file to write the appended URLs (default: appended_urls.txt)")
     args = parser.parse_args()
 
     base_urls = args.base_urls
     endpoints_file = args.endpoints_file
     wordlist = args.wordlist
     output_file = args.output_file
+    appended_urls_file = args.appended_urls_file
 
     endpoints = read_endpoints_from_file(endpoints_file)
     appended_urls = append_endpoints(base_urls, endpoints)
 
+    write_to_file(appended_urls, appended_urls_file)
     run_gobuster(appended_urls, wordlist, output_file)
 
 if __name__ == "__main__":
