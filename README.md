@@ -31,12 +31,12 @@ This script is a tool for running either Gobuster or Kiterunner to perform direc
 
 2. Optional Arguments:
 
-    -u, --base_urls: Base URLs separated by spaces.
-    -e, --endpoints_file: Path to the file containing endpoint paths to append to base URLs.
-    -o, --output_file: Path to the output file where scan results will be saved (default: results.txt).
-    -a, --appended_urls_file: Path to the file containing appended URLs (default: appended_urls.txt).
-    -t, --tool: Choose between "gobuster" or "kiterunner" (default: gobuster).
-    -sc, --status_codes: Status codes to check with Gobuster (default: 404).
+    -u, --base_urls: Base URLs separated by spaces.  
+    -e, --endpoints_file: Path to the file containing endpoint paths to append to base URLs.  
+    -o, --output_file: Path to the output file where scan results will be saved (default: results.txt).  
+    -a, --appended_urls_file: Path to the file containing appended URLs (default: appended_urls.txt).  
+    -t, --tool: Choose between "gobuster" or "kiterunner" (default: gobuster).  
+    -sc, --status_codes: Status codes to check with Gobuster (default: 404).  
 
 3. How to Run:
 
