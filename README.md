@@ -10,6 +10,17 @@ It returns true if the server is up and display its ip address. It will also gen
 ### How to use
 
 - `./check_servers.sh server_list.txt up_servers.txt`
+## reduce-img.sh
+
+This script will reduce the images of your current folder if they are bigger than 1 Mo.  
+
+### Requires
+
+You need to install `ImageMagick` you can do so with `sudo apt install imagemagick`
+
+### How to use
+
+- Go in the folder with the images you want to resize and run it `./reduce-img.sh`
 
 ## mergeWordlists.py
 
