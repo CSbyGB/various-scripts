@@ -69,3 +69,9 @@ Additionally, you can specify the tool (gobuster or kiterunner) using the `-t` f
 - Python: you must have python installed
 - Gobuster or Kiterunner: Depending on the chosen tool (-t or --tool argument), the respective tool (gobuster or kiterunner) must be installed and available in the system's PATH.
 - Wordlist File: you will need a good wordlist to provide. Kiterunner provide wordlists on their official repo [here](https://github.com/assetnote/kiterunner) and for gobuster you can use [SecLists](https://github.com/danielmiessler/SecLists), or the ones provided with your OS or your the ones you prefer.
+
+## extract-route.py
+
+A script to extract the route from a standard Java web application,  
+To run change `BASE_DIR = 'path/to/src/main/java'` to the java in your context.  
+Then you just need to `python3 extract-route.py`
