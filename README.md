@@ -76,16 +76,17 @@ A script to extract the route from a standard Java web application,
 To run change `BASE_DIR = 'path/to/src/main/java'` to the java in your context.  
 Then you just need to `python3 extract-route.py`
 
-## extract_emails.py
+## extract_emails-urls.py
 
-A script to extract email addresses found in the source code of a web page.
+A script to extract email addresses and urls found in the source code of a web page.
 
 ### How to use
 
 ```bash
-python extract_emails_en.py https://example.com/contact
-python extract_emails_en.py page.html
-python extract_emails_en.py https://example.com -o results.txt
+python extract_emails-urls.py https://example.com/contact
+python extract_emails-urls.py https://example.com --only urls
+python extract_emails-urls.py https://example.com --only emails -o results.txt
+python extract_emails-urls.py page.html --base https://example.com   # local file
 ```
 
 ### Requirements
