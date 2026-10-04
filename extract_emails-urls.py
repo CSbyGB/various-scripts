@@ -3,10 +3,10 @@
 Extract email addresses and URLs found in the source code of a web page.
 
 Usage:
-    python extract_emails_en.py https://example.com/contact
-    python extract_emails_en.py https://example.com --only urls
-    python extract_emails_en.py https://example.com --only emails -o results.txt
-    python extract_emails_en.py page.html --base https://example.com   # local file
+    python extract_emails-urls.py https://example.com/contact
+    python extract_emails-urls.py https://example.com --only urls
+    python extract_emails-urls.py https://example.com --only emails -o results.txt
+    python extract_emails-urls.py page.html --base https://example.com   # local file
 
 Dependency: pip install requests
 """
